@@ -1,11 +1,14 @@
 // localhost:3000/meet
-import { Fragment } from "react";
+import NewMeetupForm from '../../components/meetups/NewMeetupForm';
 
 function meet(){
+
+    function addMeetupHandler(data){
+        console.log(data);
+    }
+
     return(
-        <Fragment>
-            <h1>Second Page</h1>
-        </Fragment>
+        <NewMeetupForm onAddMeetups={addMeetupHandler} />        
     );
 }
 
